@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import './LandingPage.css';
-
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
 // CUSTOM COMPONENTS
 import RegisterForm from '../RegisterForm/RegisterForm';
 
@@ -55,10 +56,10 @@ function LandingPage() {
           <RegisterForm />
 
           <center>
-            <h4>Already a Member?</h4>
-            <button className="btn btn_sizeSm" onClick={onLogin}>
-              Login
-            </button>
+            <h4>Already have an Account?</h4>
+            <Stack>
+      <Button color="secondary">Login</Button>
+      </Stack>
           </center>
         </div>
       </div>

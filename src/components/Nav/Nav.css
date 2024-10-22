@@ -1,42 +1,25 @@
 .nav {
-  /* flex box layout */
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  margin: 0 0 30px;
-  background-color: #00acb0;
-  overflow: hidden;
-}
-
-.nav a {
-  text-decoration: none;
+  padding: 20px;
+  background-color: #96a0e8;
 }
 
 .nav-title {
-  font-size: 24px;
-  font-weight: 700;
-  color: #f2f2f2;
-  padding-left: 10px;
+  font-size: 2.5em;
+  color: #2c3e50; /* Darker color for the Pantry Master title */
+  font-family: 'Arial', sans-serif;
   margin: 0;
 }
 
-.navLink {
-  display: inline-block;
-  color: #f2f2f2;
-  background-color: #00acb0;
-  text-align: center;
-  padding: 24px 10px;
+.nav-links a {
+  margin: 0 10px;
   text-decoration: none;
-  font-size: 15px;
-
-  /* these last two make the logout button in
-  the nav bar look like another link */
-  border: none;
-  cursor: pointer;
-  outline: 0;
+  color: #3498db; /* Link color */
+  font-weight: bold;
 }
 
-.navLink:hover {
-  background-color: #008183;
+.nav-links a:hover {
+  color: #2980b9;
 }
