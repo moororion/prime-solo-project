@@ -9,6 +9,8 @@ const passport = require('./strategies/user.strategy');
 
 // Route Includes
 const userRouter = require('./routes/user.router');
+const pantryRouter = require('./routes/pantry.router');  // Import pantry router
+const fridgeRouter = require('./routes/fridge.router');  // Import fridge router
 
 // Express Middleware
 app.use(express.json());
@@ -24,6 +26,8 @@ app.use(passport.session());
 
 // Routes
 app.use('/api/user', userRouter);
+app.use('/api/pantry', pantryRouter);  // Use pantry routes
+app.use('/api/fridge', fridgeRouter);  // Use fridge routes
 
 // Listen Server & Port
 app.listen(PORT, () => {

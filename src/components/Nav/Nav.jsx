@@ -7,11 +7,17 @@ import { useSelector } from 'react-redux';
 function Nav() {
   const user = useSelector((store) => store.user);
 
+  // Get the current date
+  const currentDate = new Date();
+  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  const formattedDate = currentDate.toLocaleDateString('en-US', options);
+
   return (
     <div className="nav">
       <Link to="/home">
-      <h1 className="nav-title">Pantry Master</h1>
+        <h1 className="nav-title">Pantry Master</h1>
       </Link>
+      <span className="current-date">{formattedDate}</span> {/* Displaying the date */}
       <div>
         {/* If no user is logged in, show these links */}
         {!user.id && (

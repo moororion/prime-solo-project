@@ -1,0 +1,53 @@
+.container {
+    text-align: center;
+  }
+
+  .box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .box {
+    width: 200px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .box:hover {
+    background-color: #e0e0e0;
+  }
+
+  .expired {
+    background-color: #ffcccc;
+  }
+
+  .pantry {
+    background-color: #cce5ff;
+  }
+
+  .refrigerator {
+    background-color: #d1ffd6;
+  }
+
+  .add-item {
+    background-color: #ccf5ff;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 1.2em;
+  }
