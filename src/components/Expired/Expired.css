@@ -1,0 +1,49 @@
+/* Table container styling */
+.expired-table-container {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+/* Table styling */
+.expired-table {
+    width: 100%;
+    border: 1px solid #c00; /* Darker red border for the table */
+    background-color: #ffcccc; /* Light red for the table background */
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Header styling */
+.expired-th, .expired-td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.expired-th {
+    background-color: #ff9999; /* Medium red for table headers */
+}
+
+/* Row styling */
+.expired-expired {
+    background-color: #ff6666; /* Light red for expired items */
+    color: white;
+}
+
+.expired-upcoming-expiry {
+    background-color: #ffffcc; /* Light yellow for upcoming expiry items */
+}
+
+.delete-button {
+    background-color: #e74c3c; /* Red background for delete button */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.delete-button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}

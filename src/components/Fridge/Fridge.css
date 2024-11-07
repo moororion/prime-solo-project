@@ -1,0 +1,103 @@
+/* General table styling */
+.fridge-table-container {
+    max-width: 800px;
+    margin: auto;
+    border-collapse: collapse;
+    width: 100%;
+    overflow-x: auto;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fridge-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+.fridge-thead {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.fridge-thead th {
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Row styling */
+.fridge-tbody tr {
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+}
+
+.fridge-tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Row hover effect */
+.fridge-tbody tr:hover {
+    background-color: #e1f7e1;
+}
+
+/* Cell styling */
+.fridge-td, .fridge-th {
+    padding: 12px;
+    text-align: left;
+}
+
+/* Button styling */
+.fridge-delete-btn {
+    padding: 6px 12px;
+    color: white;
+    background-color: #ff4d4d;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.fridge-delete-btn:hover {
+    background-color: #d93636;
+}
+
+.fridge-add-btn {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.fridge-add-btn:hover {
+    background-color: #3e8e41;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .fridge-thead {
+        display: none;
+    }
+
+    .fridge-tbody tr {
+        display: block;
+        margin-bottom: 12px;
+    }
+
+    .fridge-tbody td {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .fridge-tbody td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: #333;
+    }
+}
