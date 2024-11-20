@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import './expired.css';
+import './Expired.css';
 
 function Expired() {
   const [expiredItems, setExpiredItems] = useState([]);
