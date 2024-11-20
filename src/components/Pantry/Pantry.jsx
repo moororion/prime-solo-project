@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import './pantry.css';
+import './Pantry.css';
 
 function Pantry() {
   const [pantryItems, setPantryItems] = useState([]);
