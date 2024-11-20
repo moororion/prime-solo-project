@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import './fridge.css';
+import './Fridge.css';
 
 function Fridge() {
   const [fridgeItems, setFridgeItems] = useState([]);
